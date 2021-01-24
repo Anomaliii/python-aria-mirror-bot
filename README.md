@@ -18,6 +18,59 @@ This project is heavily inspired from @out386 's telegram bot which is written i
 
 # Upcoming features (TODOs):
 
+# Before deploying in heroku follow this step firts
+
+- first download Termux on Playstore
+
+- termux-setup-storage first
+
+- cd /sdcard
+
+Note: the sdcard that is meant here is your cellphone's internal storage
+
+- pkg install git
+
+- git clone "your aria repo link" 
+
+- cd python-aria-mirror-bot
+
+- pkg install python
+
+- pip3 install -r requirements-cli.txt
+
+- pip install --upgrade pip
+  if you want to upgrade the pip version
+
+- First download the secret.json file
+  If you rename it, it will be credentials.json
+continue to save it in /sdcard/ariatg
+
+- python3 generate_drive_token.py
+(follow the directions in termux)
+
+- Try opening the .gitignore in the ariatg folder or you can use nano .gitignore
+
+- delete the * .pickle line
+
+- to termux again
+
+- git config --global user.email "you@example.com" (fill in github email without the " )
+
+- git config --global user.name "Your Name" (fill in your github username without the " )
+
+- git add -f credentials.json && git add --all && git commit -asm "add creds"
+
+- git push -u origin master
+
+- just deployed to Heroku
+
+# How to deploy in Heroku
+Hit the deploy to heroku button and follow the further instructions in the screen:
+
+**NB: Usage of Aria2 may leads to the suspension of your heroku account so deploy at your own risk.**
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Satriouz/python-aria-mirror-bot)
+
 # How to deploy?
 Deploying is pretty much straight forward and is divided into several steps as follows:
 ## Installing requirements
