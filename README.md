@@ -18,11 +18,11 @@ This project is heavily inspired from @out386 's telegram bot which is written i
 
 # Upcoming features (TODOs):
 
-# Before deploying in heroku follow this step firts
+# Before deploying in heroku follow this step first
 
 - first download Termux on Playstore
 
-- termux-setup-storage first
+- termux-setup-storage 
 
 - cd /sdcard
 
@@ -30,9 +30,9 @@ Note: the sdcard that is meant here is your cellphone's internal storage
 
 - pkg install git
 
-- git clone "your aria repo link" 
+- git clone <your aria repo link> "ariatg"
 
-- cd python-aria-mirror-bot
+- cd ariatg
 
 - pkg install python
 
@@ -47,6 +47,8 @@ continue to save it in /sdcard/ariatg
 
 - python3 generate_drive_token.py
 (follow the directions in termux)
+
+- git status
 
 - Try opening the .gitignore in the ariatg folder or you can use nano .gitignore
 
